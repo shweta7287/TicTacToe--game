@@ -42,15 +42,15 @@ const checkWin = () => {
                 document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "150px"
                 gameover.play();
                 jsConfetti.addConfetti({
-                    timeout: 7000,
-                    confettiRadius: 900000,
+                   
+                    confettiRadius: 90,
                     confettiColors: [
                         '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
                     ],
-                    confettiNumber: 500,
+                    confettiNumber: 50,
                     emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸', '🎀', '🎈'],
                     emojiSize: 60,
-                    confettiNumber: 1000,
+                   
                 })
 
             }
