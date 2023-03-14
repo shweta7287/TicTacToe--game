@@ -76,7 +76,7 @@ Array.from(boxes).forEach(element => {
     // element.querySelector('.boxtext') searches for the first element with class name boxtext that is a descendant of the element object, and returns the found element as an object.
     let boxtext = element.querySelector('.boxtext');
     element.addEventListener('click', () => {
-        if (boxtext.innerText === '') {
+        if (boxtext.innerText === '' && !isgameover) {
             boxtext.innerText = turn
             turn = changeTurn();
             tune.play();
